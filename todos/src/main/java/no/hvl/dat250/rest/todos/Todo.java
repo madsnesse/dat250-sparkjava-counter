@@ -1,6 +1,7 @@
 package no.hvl.dat250.rest.todos;
 
 import java.util.Objects;
+import java.util.Random;
 
 public class Todo {
     private final Long id;
@@ -14,7 +15,7 @@ public class Todo {
     }
 
     public Todo(String summary, String description) {
-        this(null, summary, description);
+        this(new Random().nextLong(), summary, description);
     }
 
     /**
@@ -46,4 +47,5 @@ public class Todo {
     public int hashCode() {
         return Objects.hash(id, summary, description);
     }
+
 }
