@@ -9,7 +9,6 @@ import com.google.gson.Gson;
 
 /**
  * Hello world!
- *
  */
 public class App {
 	
